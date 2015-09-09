@@ -9,5 +9,7 @@
 	$dbname = 'freelance';
 	$login = new Login($servername, $username, $password, $dbname);
 	$login->connectDB();
-	$login->checkLogin('debianmik@gmail.com','123');
+	$status = $login->checkLogin('debianmik@gmail.com','124');
+
+	echo $status;
 ?>
